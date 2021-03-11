@@ -11,6 +11,7 @@ describe('project.mapper specs', () => {
     //Assert
     expect(result).toEqual(viewModel.createEmptyProject());
   });
+
   it('should return empty viewModel.project when it feeds null', () => {
     //Arrange
     const project: apiModel.Project = null;
@@ -19,6 +20,7 @@ describe('project.mapper specs', () => {
     //Assert
     expect(result).toEqual(viewModel.createEmptyProject());
   });
+
   it('should return a viewModel.project when it feeds a apiModel.project', () => {
     //Arrange
     const project: apiModel.Project = {
